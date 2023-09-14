@@ -1,5 +1,7 @@
 # Image-Captioning-using-Flicker_dataset
 
+Image Captioning is the task of describing the content of an image in words. This task lies at the intersection of computer vision and natural language processing. Most image captioning systems use an encoder-decoder framework, where an input image is encoded into an intermediate representation of the information in the image, and then decoded into a descriptive text sequence. The most popular benchmarks are nocaps and COCO, and models are typically evaluated according to a BLEU or CIDER metric.
+
 1) Data collection: Gather a dataset of paired images and corresponding captions. You may find existing datasets like MSCOCO, Flickr8k, or Flickr30k suitable for this purpose.
 
 2) Preprocess the data: Preprocess the images by resizing them to a consistent size and normalizing the pixel values. Preprocess the captions by tokenizing the text, converting words to indices, and handling any necessary cleaning or formatting steps.
@@ -15,3 +17,7 @@
 7) Evaluate the model: Assess the performance of the trained model by measuring metrics like BLEU score, METEOR score, or CIDEr score. These metrics evaluate the quality of the generated captions compared to the ground truth captions.
 
 8) Generate captions: Once the model is trained and evaluated, you can use it to generate captions for new images. Pass an image through the CNN to extract features, and then feed those features into the RNN to generate a caption word by word.
+
+Referenes:
+
+- [Image Captioning Paper and Codes](https://paperswithcode.com/task/image-captioning)
