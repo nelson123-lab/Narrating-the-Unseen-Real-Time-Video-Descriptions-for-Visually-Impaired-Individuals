@@ -21,3 +21,17 @@ Image Captioning is the task of describing the content of an image in words. Thi
 Referenes:
 
 - [Image Captioning Paper and Codes](https://paperswithcode.com/task/image-captioning)
+- [Semi-Autoregressive Image Captioning](https://paperswithcode.com/paper/semi-autoregressive-image-captioning)
+- [DeeCap: Dynamic Early Exiting for Efficient Image Captioning](https://paperswithcode.com/paper/deecap-dynamic-early-exiting-for-efficient)
+- [SpeechCLIP: Integrating Speech with Pre-Trained Vision and Language Model](https://paperswithcode.com/paper/speechclip-integrating-speech-with-pre)
+- [Show, Translate and Tell](https://paperswithcode.com/paper/show-translate-and-tell)
+- [Guided Open Vocabulary Image Captioning with Constrained Beam Search](https://paperswithcode.com/paper/guided-open-vocabulary-image-captioning-with)
+- [A Picture is Worth a Thousand Words: A Unified System for Diverse Captions and Rich Images Generation](https://paperswithcode.com/paper/a-picture-is-worth-a-thousand-words-a-unified)
+- [AVLnet: Learning Audio-Visual Language Representations from Instructional Videos](https://paperswithcode.com/paper/avlnet-learning-audio-visual-language#tasks)
+- [NICE: CVPR 2023 Challenge on Zero-shot Image Captioning](https://paperswithcode.com/paper/nice-2023-zero-shot-image-captioning)
+- [Enhancing image captioning with depth information using a Transformer-based framework](https://openreview.net/forum?id=PtrK8Aoe2M&referrer=%5BTMLR%5D(%2Fgroup%3Fid%3DTMLR))
+- [Current challenges and limitations of image captioning](https://www.linkedin.com/advice/0/what-current-challenges-limitations-image-captioning)
+- [How to Develop a Deep Learning Photo Caption Generator from Scratch](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)
+- [Generating image captions from the camera feed](https://subscription.packtpub.com/book/data/9781789611212/5/ch05lvl1sec44/generating-image-captions-from-the-camera-feed)
+- [A Real-time Image Caption Generator based on Jetson nano](https://www.youtube.com/watch?v=1CCw9bJy5w8&ab_channel=DeepLearningUSC)
+- [Exploring Deep Learning Image Captioning](https://mobidev.biz/blog/exploring-deep-learning-image-captioning)
