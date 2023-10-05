@@ -35,3 +35,4 @@ Referenes:
 - [Generating image captions from the camera feed](https://subscription.packtpub.com/book/data/9781789611212/5/ch05lvl1sec44/generating-image-captions-from-the-camera-feed)
 - [A Real-time Image Caption Generator based on Jetson nano](https://www.youtube.com/watch?v=1CCw9bJy5w8&ab_channel=DeepLearningUSC)
 - [Exploring Deep Learning Image Captioning](https://mobidev.biz/blog/exploring-deep-learning-image-captioning)
+- [Image captioning using CRNN encoding in seq2seq model](https://medium.com/@aromalma/image-captioning-using-crnn-encoding-in-seq2seq-model-808bf67f2d6a)
