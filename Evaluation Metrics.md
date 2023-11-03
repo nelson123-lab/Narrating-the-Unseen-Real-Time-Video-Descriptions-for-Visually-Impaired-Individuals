@@ -19,3 +19,9 @@ In image captioning, the goal is to generate textual descriptions that accuratel
 9. **TER (Translation Edit Rate):** TER is similar to WER but takes into account word order and structural differences between the generated and reference captions.
 
 10. **Human Evaluation:** In addition to automated metrics, human evaluation is often conducted, where human annotators assess the quality of generated captions for factors like relevance, fluency, and informativeness. Common human evaluation methods include pairwise comparison and Likert scale ratings
+
+11. **BERTScore**
+    - It measures the similarity between the predicted captions and the reference captions using contextualized word embeddings. It leverages a pre-trained BERT (Bidirectional Encoder Representations        from       Transformers) model to encode the captions into dense vector representations. By comparing the embeddings of the predicted and reference captions, BERTScore calculates a similarity score that reflects             the quality of the generated captions.
+    -  The advantage of BERTScore is that it considers both the precision and recall of the predicted captions, taking into account the overlapping words and their order. This makes it a more comprehensive              evaluation metric compared to traditional metrics like BLEU or METEOR, which only focus on exact word matches.
+    -  When using BERTScore for image captioning evaluation, the predicted captions are compared against the ground truth reference captions. The resulting score provides a quantitative measure of how well the          generated captions align with the reference captions in terms of semantic similarity.
+    -  By incorporating BERTScore as an evaluation metric in image captioning, researchers and practitioners can obtain a more nuanced understanding of the quality and relevance of the generated captions,               helping to drive improvements in caption generation models.
