@@ -36,3 +36,8 @@ Referenes:
 - [A Real-time Image Caption Generator based on Jetson nano](https://www.youtube.com/watch?v=1CCw9bJy5w8&ab_channel=DeepLearningUSC)
 - [Exploring Deep Learning Image Captioning](https://mobidev.biz/blog/exploring-deep-learning-image-captioning)
 - [Image captioning using CRNN encoding in seq2seq model](https://medium.com/@aromalma/image-captioning-using-crnn-encoding-in-seq2seq-model-808bf67f2d6a)
+- [Step by Step Guide to Build Image Caption Generator using Deep Learning](https://www.analyticsvidhya.com/blog/2021/12/step-by-step-guide-to-build-image-caption-generator-using-deep-learning/)
+- [Image/Video Summarization in Text/Speech for Visually Impaired People](https://ieeexplore.ieee.org/document/9972653)
+- [Audio Description of Videos for People with Visual Disabilities](https://www.researchgate.net/publication/304189394_Audio_Description_of_Videos_for_People_with_Visual_Disabilities)
+- [Artificial intelligence for visually impaired](https://www.sciencedirect.com/science/article/pii/S0141938223000240)
+- [What Makes Videos Accessible to Blind and Visually Impaired People?](https://dl.acm.org/doi/10.1145/3411764.3445233)
