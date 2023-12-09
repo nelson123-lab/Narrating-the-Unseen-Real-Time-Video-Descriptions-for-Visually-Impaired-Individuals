@@ -58,11 +58,11 @@ def image_description_1_image(image):
                 ]
             }
         ],
-        "max_tokens": 300
+        "max_tokens": 350
     }
 
     # Make API request and return the generated description
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    response = requests.post("https://api.openai.com/v1/chat/completions", headers = headers, json = payload)
     return response.json()['choices'][0]['message']['content']
 
 # Function to get description for two consecutive images with contextual analysis
@@ -118,7 +118,7 @@ def image_description_2_images(image1, image2, image_description_prev):
     }
 
     # Make API request and return the generated description
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    response = requests.post("https://api.openai.com/v1/chat/completions", headers = headers, json = payload)
     return response.json()['choices'][0]['message']['content']
 
 # Function to convert text to speech using OpenAI TTS-1-HD model
@@ -131,20 +131,20 @@ def text_to_speech(text):
     """
     # Generate audio from text using OpenAI TTS-1-HD model
     spoken_response = client.audio.speech.create(
-        model="tts-1-hd",
-        voice="nova",
-        response_format="opus",
-        input=text
+        model = "tts-1-hd",
+        voice = "nova",
+        response_format = "opus",
+        input = text
     )
 
     # Convert audio response to playable format and play the audio
     buffer = io.BytesIO()
-    for chunk in spoken_response.iter_bytes(chunk_size=4096):
+    for chunk in spoken_response.iter_bytes(chunk_size = 4096):
         buffer.write(chunk)
     buffer.seek(0)
 
     with sf.SoundFile(buffer, 'r') as sound_file:
-        data = sound_file.read(dtype='int16')
+        data = sound_file.read(dtype = 'int16')
         sd.play(data, sound_file.samplerate)
         sd.wait()
 
@@ -152,7 +152,7 @@ def text_to_speech(text):
 cap = cv2.VideoCapture(0)
 
 # Function to continuously describe live video frames and display the video
-def live_video_description(cycle, cap=cap, window_name='frame'):
+def live_video_description(cycle, cap=cap, window_name = 'frame'):
     """
     Continuously describe live video frames and display the video.
 
@@ -186,8 +186,8 @@ def live_video_description(cycle, cap=cap, window_name='frame'):
                 image_description_crnt = image_description_2_images(base64_frame_prev, base64_frame, image_description_prev)
 
             # Print and speak the generated description
-            print("\n Description==========>", image_description_crnt, "\n")
-            text_to_speech(text=image_description_crnt)
+            print("\n The Current frame shows", image_description_crnt, "\n")
+            text_to_speech(text = image_description_crnt)
 
             # Update the previous description and frame for the next iteration
             image_description_prev = " ".join([image_description_prev, image_description_crnt])
@@ -196,7 +196,7 @@ def live_video_description(cycle, cap=cap, window_name='frame'):
         n += 1
 
 # Function to display the live video feed
-def display_video(cap=cap):
+def display_video(cap = cap):
     """
     Display the live video feed.
 
