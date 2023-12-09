@@ -123,33 +123,18 @@ def image_description_2_images(image1, image2, image_description_prev):
 # Function to convert text to speech using OpenAI TTS-1-HD model
 
 
-def T_T_speech(mytext, Language = 'en'):
+def T_T_speech(text, Language = 'en'):
 
     # have a high speed
-    myobj = gTTS(text = mytext, lang = Language, slow=False)
+    myobj = gTTS(text = text, lang = Language, slow=False)
 
     # Saving the converted audio in a mp3 file named
     myobj.save("read_aloud.mp3")
     os.system("read_aloud.mp3")
 
 # Set up video capture from the default camera (index 0)
-cap = cv2.VideoCapture("https://11.47.255.44:8080/video")
+cap = cv2.VideoCapture("https://11.47.255.44:8080/video?type=some.mjpeg")
 
-import urllib.request
-import cv2
-import numpy as np
-import time
-
-URL = "http://11.47.255.44:8080/shot.jpg"
-while True:
-    img_arr = np.array(bytearray(urllib.request.urlopen(URL).read()),dtype=np.uint8)
-    img = cv2.imdecode(img_arr,-1)
-    cv2.imshow('IPWebcam',img)
-    q = cv2.waitKey(1)
-    if q == ord("q"):
-        break
-
-cv2.destroyAllWindows()
 # Function to continuously describe live video frames and display the video
 def live_video_description(cycle, cap = cap, window_name = 'frame'):
     """
@@ -217,7 +202,7 @@ def display_video(cap = cap):
 def main():
     threading.Thread(target=display_video).start()
     threading.Thread(target=live_video_description, args=(5,)).start()
-
+    cv2.destroyAllWindows()
 # Entry point of the script
 if __name__ == "__main__":
     main()
