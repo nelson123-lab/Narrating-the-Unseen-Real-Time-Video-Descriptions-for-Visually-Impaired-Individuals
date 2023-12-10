@@ -61,9 +61,9 @@ while True:
         # Process the frame for captioning
         try:
             captions = caption(pil_image)
-            captions_text = str(captions)  # Convert captions to string if necessary
-            print(captions_text['generated_text'])
-            T_T_speech(captions_text['generated_text'])
+            captions_text = str(captions[0]['generated_text'])  # Convert captions to string if necessary
+            print(captions_text)
+            T_T_speech(captions_text)
         except Exception as e:
             print(f"Error in captioning: {e}")
 
